@@ -129,7 +129,5 @@ public class MyService extends Service {
 
 			funfManager = null;
 		}
-
 	};
-
 }

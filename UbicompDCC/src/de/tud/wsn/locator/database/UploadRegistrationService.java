@@ -15,7 +15,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
-import android.provider.Settings.Secure;
 import android.util.Log;
 import de.darmstadt.tu.wsn.locator.R;
 import edu.mit.media.funf.storage.HttpArchive;
@@ -48,7 +47,6 @@ public class UploadRegistrationService extends Service {
 
 			Log.d(TAG, "Starting to upload user's registation");
 
-			String android_id = Secure.getString(getApplication().getContentResolver(), Secure.ANDROID_ID);
 			// create and execute sql query
 			UserDatabaseHelper helper = new UserDatabaseHelper(getApplicationContext());
 			SQLiteDatabase database = helper.getWritableDatabase();

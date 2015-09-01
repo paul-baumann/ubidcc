@@ -16,6 +16,7 @@ public class BroadcastReceiverSensor extends BroadcastReceiver {
 	private static BroadcastReceiverSensor broadcastReceiverSensor;
 	private SharedPreferences preferences;
 
+
 	public static BroadcastReceiverSensor getInstance() {
 
 		if (broadcastReceiverSensor == null)
@@ -23,8 +24,10 @@ public class BroadcastReceiverSensor extends BroadcastReceiver {
 		return broadcastReceiverSensor;
 	}
 
+
 	@Override
 	public void onReceive(Context context, Intent intent) {
+
 		if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
 			preferences = PreferenceManager.getDefaultSharedPreferences(context);
 			Log.i("MyService", "Register service after boot?");

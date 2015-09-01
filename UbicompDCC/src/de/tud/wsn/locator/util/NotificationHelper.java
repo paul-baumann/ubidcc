@@ -21,21 +21,15 @@ public class NotificationHelper {
 		Intent intent = new Intent(context, MainActivity.class);
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
-		PendingIntent pIntent = PendingIntent.getActivity(context, 0, intent, 0); // PendingIntent.FLAG_UPDATE_CURRENT
-																					// |
-																					// PendingIntent.FLAG_ONE_SHOT
-
-		Notification not = null;
+		PendingIntent pIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
 		NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
 		builder.setContentTitle("UbiComp 2013").setContentText(context.getString(R.string.registrationAchievementUnlocked))
 				.setSmallIcon(R.drawable.locator).setContentIntent(pIntent);
 
-		not = builder.getNotification();
-		// }
-
-		not.flags = Notification.FLAG_AUTO_CANCEL;
-		mNotificationManager.notify(2, not);
+		Notification notification = builder.getNotification();
+		notification.flags = Notification.FLAG_AUTO_CANCEL;
+		mNotificationManager.notify(2, notification);
 	}
 
 

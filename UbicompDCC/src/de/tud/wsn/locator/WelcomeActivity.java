@@ -22,8 +22,6 @@ import de.darmstadt.tu.wsn.locator.R;
  * Basic contact data that is required to run the app, and the "README" with
  * terms of service, etc.
  * 
- * @author bjoern
- * 
  */
 public class WelcomeActivity extends SherlockActivity {
 
@@ -41,22 +39,6 @@ public class WelcomeActivity extends SherlockActivity {
 		setContentView(R.layout.activity_welcome);
 
 		textView = (TextView) findViewById(R.id.welcomeMessageTextView);
-		// textView.setMovementMethod(LinkMovementMethod.getInstance());
-		// textView.setOnClickListener(new OnClickListener() {
-		// @Override
-		// public void onClick(View v) {
-		// Intent intent = new Intent(getApplicationContext(),
-		// RecipeActivity.class);
-		// startActivity(intent);
-		// }
-		// });
-
-		// Resources res = getResources();
-		// String text =
-		// String.format(res.getString(R.string.welcomeMessageText));
-		// CharSequence styledText = Html.fromHtml(text);
-		// textView.setText(styledText);
-
 		textView.setMovementMethod(LinkMovementMethod.getInstance());
 
 		continueButton = (Button) findViewById(R.id.btn_continue);

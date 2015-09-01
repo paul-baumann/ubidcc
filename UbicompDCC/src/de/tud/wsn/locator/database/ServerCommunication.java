@@ -10,25 +10,19 @@ import java.net.URL;
 import android.os.AsyncTask;
 import android.util.Log;
 
-public class ServerCommunication extends AsyncTask<String, Void, String>{
-	
+public class ServerCommunication extends AsyncTask<String, Void, String> {
+
 	@Override
 	protected String doInBackground(String... params) {
+
 		String urlPath = params[0];
 		String data = params[1];
-	
+
 		try {
 			HttpURLConnection conn = null;
 			URL url = new URL(urlPath);
 
 			conn = (HttpURLConnection) url.openConnection();
-//			// Allow Inputs
-//			conn.setDoInput(true);
-//			// Allow Outputs
-//			conn.setDoOutput(true);
-//			// Don't use a cached copy.
-//			conn.setUseCaches(false);
-//			// set timeout
 			conn.setConnectTimeout(60000);
 			conn.setReadTimeout(60000);
 			// Use a post method.
@@ -53,7 +47,7 @@ public class ServerCommunication extends AsyncTask<String, Void, String>{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 		return null;
 	}
 

@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 import android.app.AlarmManager;
-import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -60,16 +58,12 @@ public class MainActivity extends SherlockFragmentActivity implements OnSharedPr
 		preferences.registerOnSharedPreferenceChangeListener(this);
 
 		if (!preferences.getBoolean(getString(R.string.data_collection_key), false)) {
-			/*
+			/**
 			 * start initial information activity, if these details have not yet
 			 * been provided
 			 */
 			SharedPreferences prefs = getSharedPreferences("edu.mit.media.funf.FunfManager", 0);
 			prefs.edit().putString("__DISABLED__", "default").commit();
-
-			// Intent it = new Intent(MainActivity.this,
-			// InitialInformationActivity.class);
-			// startActivityForResult(it, 0);
 		}
 
 		mTabHost = (TabHost) findViewById(android.R.id.tabhost);
@@ -135,37 +129,17 @@ public class MainActivity extends SherlockFragmentActivity implements OnSharedPr
 	}
 
 
-	private void startImpressum() {
-
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setTitle(R.string.impressumTitle).setMessage(R.string.impressumText)
-				.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-
-					public void onClick(DialogInterface dialog, int id) {
-
-					}
-				});
-		// Create the AlertDialog object and return it
-		builder.create();
-		builder.show();
-	}
-
-
 	@Override
 	protected void onResume() {
 
 		super.onResume();
 		if (!preferences.getBoolean(getString(R.string.settings_inital_survey_completed), false)) {
-			/*
+			/**
 			 * start initial information activity, if these details have not yet
 			 * been provided
 			 */
 			SharedPreferences prefs = getSharedPreferences("edu.mit.media.funf.FunfManager", 0);
 			prefs.edit().putString("__DISABLED__", "default").commit();
-
-			// Intent it = new Intent(MainActivity.this,
-			// InitialInformationActivity.class);
-			// startActivityForResult(it, 0);
 		}
 	}
 
@@ -228,24 +202,6 @@ public class MainActivity extends SherlockFragmentActivity implements OnSharedPr
 				this.sendBroadcast(broadcastIntent);
 			}
 		}
-	}
-
-
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-		super.onActivityResult(requestCode, resultCode, data);
-
-		// if (resultCode == RESULT_OK)
-		// switch (requestCode) {
-		// case 0:
-		// try {
-		// ContentValues values = data.getExtras().getParcelable(QUESTIONNAIRE);
-		// new UploadUserDataTask(MainActivity.this).execute(values);
-		// } catch (Exception e) {
-		// }
-		// break;
-		// }
 	}
 
 

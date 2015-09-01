@@ -35,10 +35,6 @@ import de.darmstadt.tu.wsn.locator.R;
 import de.tud.wsn.locator.util.ServiceHelper;
 import edu.mit.media.funf.storage.UserDatabaseHelper;
 
-/**
- * 
- * 
- */
 public class QuestionnaireFragment extends SherlockFragment {
 
 	private EditText ageEdit;

@@ -37,7 +37,7 @@ import edu.mit.media.funf.storage.UserDatabaseHelper;
  * Basic contact data that is required to run the app, and the "README" with
  * terms of service, etc.
  * 
- * @author bjoern
+ * @author Bjoern Richerzhagen
  * 
  */
 public class InitialInformationActivity extends SherlockActivity {
@@ -64,9 +64,7 @@ public class InitialInformationActivity extends SherlockActivity {
 		preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
 		if (!preferences.getBoolean(getString(R.string.settings_first_start_key), true)) {
-			// setResult(RESULT_CANCELED);
 			nextActivity();
-			// finish();
 		}
 
 		ageEdit = (EditText) findViewById(R.id.ageEdit);
@@ -150,10 +148,6 @@ public class InitialInformationActivity extends SherlockActivity {
 			public void onClick(View arg0) {
 
 				showNotNowDialog();
-				// Intent startMain = new Intent(Intent.ACTION_MAIN);
-				// startMain.addCategory(Intent.CATEGORY_HOME);
-				// startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				// startActivity(startMain);
 				Editor editor = preferences.edit();
 				editor.putBoolean(getString(R.string.settings_first_start_key), false);
 				editor.commit();
@@ -214,11 +208,6 @@ public class InitialInformationActivity extends SherlockActivity {
 			// make the device always discoverable and get the bluetooth
 			// address
 			if (bluetoothAdapter != null) {
-				// Intent discoverableIntent = new
-				// Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
-				// discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION,
-				// 0);
-				// startActivity(discoverableIntent);
 				return bluetoothAdapter.getAddress();
 			}
 

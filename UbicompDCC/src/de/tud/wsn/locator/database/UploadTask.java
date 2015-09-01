@@ -50,7 +50,6 @@ public class UploadTask extends AsyncTask<Object, Void, String> {
 		File sd = Environment.getExternalStorageDirectory();
 		File backupDB = new File(sd, backupDBPath);
 		SQLiteDatabase checkDB = SQLiteDatabase.openOrCreateDatabase(backupDB, null);
-		// checkDB.delete(DatabaseHelper.TABLE_GEOPLACES, null, null);
 		checkDB.close();
 		backup = "";
 

@@ -65,9 +65,6 @@ public class ServiceHelper {
 
 	public static boolean isTimeDuringCollectionDay(Context context) {
 
-		// SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss z");
-
-		// sdf.format(cal.getTime())
 		Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT+2"));
 
 		boolean during = cal.getTimeInMillis() >= getFirstDay().getTimeInMillis() && cal.getTimeInMillis() >= getStartOfADay().getTimeInMillis()

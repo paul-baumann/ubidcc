@@ -246,8 +246,6 @@ public class DCCFragment extends SherlockFragment implements OnSharedPreferenceC
 
 		super.onResume();
 		setSensorStatus();
-		setQuestionnaireStatus();
-		setRegistrationStatus();
 
 	}
 
@@ -255,17 +253,12 @@ public class DCCFragment extends SherlockFragment implements OnSharedPreferenceC
 	private void setSensorStatus() {
 
 		if (preferences.getBoolean(getString(R.string.data_collection_key), false)) {
-			// sensorStatus.setText(getString(R.string.displayDataCollectionStatusRunning));
-			// sensorStatus.setTextColor(Color.GREEN);
 			if (ServiceHelper.isTimeDuringCollectionDay(getActivity()))
 				NotificationHelper.showRecordingNotification(getActivity(), "");
 			else
 				NotificationHelper.showRecordingNotification(getActivity(), "but in standby");
-		} else {
-			// sensorStatus.setText(getString(R.string.displayDataCollectionStatusStopped));
-			// sensorStatus.setTextColor(Color.RED);
+		} else
 			NotificationHelper.stopRecordingNotification(getActivity(), "");
-		}
 
 		if (ServiceHelper.shouldServiceBeStarted(getActivity())) {
 			if (!ServiceHelper.isMyServiceRunning(getActivity())) {
@@ -277,40 +270,6 @@ public class DCCFragment extends SherlockFragment implements OnSharedPreferenceC
 				Intent stopService = new Intent(getActivity(), MyService.class);
 				getActivity().stopService(stopService);
 			}
-		}
-	}
-
-
-	private void setQuestionnaireStatus() {
-
-		if (preferences.getBoolean(getString(R.string.settings_inital_survey_completed), false)) {
-			if (preferences.getBoolean(getString(R.string.settings_inital_survey_uploaded), false)) {
-				// questionnaireStatus.setText(getString(R.string.displayQuestionnaireStatusCompletedAndUploaded));
-				// questionnaireStatus.setTextColor(Color.GREEN);
-			} else {
-				// questionnaireStatus.setText(getString(R.string.displayQuestionnaireStatusCompleted));
-				// questionnaireStatus.setTextColor(Color.BLUE);
-			}
-		} else {
-			// questionnaireStatus.setText(getString(R.string.displayQuestionnaireStatusUncompleted));
-			// questionnaireStatus.setTextColor(Color.RED);
-		}
-	}
-
-
-	private void setRegistrationStatus() {
-
-		if (preferences.getBoolean(getString(R.string.settings_registration_for_data_completed), false)) {
-			if (preferences.getBoolean(getString(R.string.settings_registration_for_data_uploaded), false)) {
-				// registrationStatus.setText(getString(R.string.displayRegistrationStatusCompletedAndUploaded));
-				// registrationStatus.setTextColor(Color.GREEN);
-			} else {
-				// registrationStatus.setText(getString(R.string.displayRegistrationStatusCompleted));
-				// registrationStatus.setTextColor(Color.BLUE);
-			}
-		} else {
-			// registrationStatus.setText(getString(R.string.displayRegistrationStatusUncompleted));
-			// registrationStatus.setTextColor(Color.RED);
 		}
 	}
 
