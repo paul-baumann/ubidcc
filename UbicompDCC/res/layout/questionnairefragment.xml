@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="4dip" >
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dip"
+    android:layout_weight="0.1"
+    android:paddingRight="10dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/questinnaireTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/questionnaireTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/questionnaireDescriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/questionnaireDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="fill_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/genderView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/gender"
+                    android:textSize="@dimen/text_title_size" />
+
+                <RadioGroup
+                    android:id="@+id/genderRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/genderMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male" />
+
+                    <RadioButton
+                        android:id="@+id/genderFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textSize="@dimen/text_title_size" />
+
+                <EditText
+                    android:id="@+id/ageEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/roleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/role"
+            android:textSize="@dimen/text_title_size" />
+
+        <Spinner
+            android:id="@+id/roleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/academiaView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/academiaindustry"
+            android:textSize="@dimen/text_title_size" />
+
+        <RadioGroup
+            android:id="@+id/academiaRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/academiaRadioAcademia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/academia" />
+
+            <RadioButton
+                android:id="@+id/academiaRadioIndustry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/industry" />
+        </RadioGroup>
+
+        
+        
+    </LinearLayout>
+    
+    
+
+</ScrollView>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal" >
+        	<Button
+				android:id="@+id/btn_accept"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_weight="1"
+        		android:paddingBottom="15dip"
+        	android:paddingLeft="5dip"
+        	android:paddingRight="5dip"
+        	android:paddingTop="15dip"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/text_title_size"
+        	android:textStyle="bold" 
+        	android:layout_gravity="center"
+        	android:layout_marginLeft="3dp"
+        	android:layout_marginRight="3dp"
+        	android:layout_marginTop="15dp"
+        	android:layout_marginBottom="15dp"
+        	android:background="@color/blueUbicomp"
+        		android:text="@string/update" />
+        	<Button
+				android:id="@+id/reset_button"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_weight="1"
+        		android:paddingBottom="15dip"
+        	android:paddingLeft="5dip"
+        	android:paddingRight="5dip"
+        	android:paddingTop="15dip"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/text_title_size"
+        	android:textStyle="bold" 
+        	android:layout_gravity="center"
+        	android:layout_marginLeft="3dp"
+        	android:layout_marginRight="3dp"
+        	android:layout_marginTop="15dp"
+        	android:layout_marginBottom="15dp"
+        	android:background="@color/blueUbicomp"
+        		android:text="@string/reset" />
+        </LinearLayout>
+</LinearLayout>

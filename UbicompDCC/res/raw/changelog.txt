@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<style type='text/css'>
+			a				{ color:#a0a0e0 }
+			div.title		{ 
+				color:#C0F0C0; 
+				font-size:1.2em; 
+				font-weight:bold; 
+				margin-top:1em; 
+				margin-bottom:0.5em; 
+				text-align:center }
+			div.subtitle	{ 
+				color:#C0F0C0; 
+				font-size:0.8em; 
+				margin-bottom:1em; 
+				text-align:center }
+			div.freetext	{ color:#F0F0F0 }
+			div.list		{ color:#C0C0F0 }
+		</style>
+	</head>
+	<body>
+
+$ 1.3
+  % Version 1.3
+  _ 15.07.2013	
+  ! Date collection campaign over. Don't uninstall the app, just deactivate sensor scans. New features will come soon.
+	* Removed notifications
+	* No more upload of data to a server
+	
+$ 1.2
+  % Version 1.2
+  _ 14.06.2013	
+  ! New sensor and diary suggestions
+	* Accelerometer gathers data about movement
+	* Diary suggests complete entries to help remembering
+	* Rename a place and all corresponding diary entries at once
+  
+$ 1.1
+  % Version 1.1
+  _ 13.06.2013
+  ! Added Changelog and fixes
+    * Diary suggests nearest location
+	* Diary status "<span style="font-style:italic">On the way</span>" for beeing in no place
+	* Diary layout and colors
+    * See table fixes
+	
+$ 1.0
+  % Version 1.0
+  _ 08.06.2013
+  ! <b>Locator</b> release for data collection campaign!
+    * Gather sensor data
+    * Manage user input
+	* Visualize data
+
+$ END_OF_CHANGE_LOG
+	</body>
+</html>

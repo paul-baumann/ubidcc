@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dataCollectionStatusText">Data collection:</string>
+    <string name="questionnaireStatusText">Questionnaire:</string>
+    <string name="registrationStatusText">Registration for data set:</string>
+    <string name="bluetoothPermissionStatusText">Bluetooth discoverable:</string>
+    
+    <string name="impressumTitle">Impressum</string>
+    <string name="impressumText">tba</string>
+    <string name="impressum">impressum</string>
+    
+    <string name="startingQuestionnaire">Starting questionnaire</string>
+    <string name="aboutCampaign">About campaign</string>
+    <string name="statusInformationText">Data collection status</string>
+    <string name="questionnaireTitle">Answers to the questionnaire</string>
+    <string name="registerTitle">Register to get data set</string>
+    
+    <string name="displayQuestionnaireStatusUncompleted">uncompleted</string>
+    <string name="displayQuestionnaireStatusCompleted">upload pending..</string>
+    <string name="displayQuestionnaireStatusCompletedAndUploaded">uploaded</string>
+    
+    <string name="displayRegistrationStatusUncompleted">not registered</string>
+    <string name="displayRegistrationStatusCompleted">upload pending..</string>
+    <string name="displayRegistrationStatusCompletedAndUploaded">uploaded</string>
+    
+    <string name="displayBluetoothPermissionStatusAllowed">allowed</string>
+    <string name="displayBluetoothPermissionStatusForbidden">forbidden</string>
+    
+    <string name="skip_questionnaire_title">Skip questionnaire</string>
+    <string name="skip_questionnaire_text">Are you sure that you want to skip this questionnaire? You can fill it out later.</string>
+    
+    <string name="registrationIncomplete">Registration incomplete\n\nPRESS TO FILL OUT</string>
+    <string name="registrationPending">Registration completed\n\nUPLOAD PENDING</string>
+    <string name="registrationUploaded">Registration\n\nCOMPLETED AND UPLOADED</string>
+    
+    <string name="questionnaireIncomplete">Questionnaire incomplete\n\nPRESS TO FILL OUT</string>
+    <string name="questionnairePending">Questionnaire completed\n\nUPLOAD PENDING</string>
+    <string name="questionnaireUploaded">Questionnaire\n\nCOMPLETED AND UPLOADED</string>
+    
+    <string name="dataCollectionStopped">Data collection stopped\n\nPRESS TO START</string>
+    <string name="dataCollectionPaused">Data collection paused\n\nPRESS TO STOP</string>
+    <string name="dataCollectionRunning">Data collection running\n\nPRESS TO STOP</string>
+    
+    <string name="stop_collection_dialog_title">Really stop data collection?</string>
+    <string name="stop_collection_dialog_message">The data collection runs only during conference hours and does not collect during the night.</string>
+    <string name="data_collection_text">Thank you for participating in the UbiComp 2013 data collection campaign. This application aims to collect Bluetooth and Wi-Fi scans in order to analyze differences in the mobility behavior between individuals and groups of scientists. The initial questionnaire is used to analyze differences in the mobility behavior between individuals and groups of the participants. The buttons allow to control the collection service. All the collected data will be transmitted to a remote server periodically and only when the Wi-Fi connection is established. The background service runs between 8am and 6pm on conference days to ensure the privacy issues.</string>
+    <string name="data_collection_intro">Please let us know a bit more about you. Filling the questionnaire is optional but it will double your chances to win the Amazon vouchers!</string>
+    <string name="data_collection_tos">Terms of Service</string>
+    <string name="data_collection_accept">By clicking accept, you agree...</string>
+    
+    <string name="questionnaireDescription">Please let us know a bit more about you. Filling the questionnaire is optional but it will double your chances to win the Amazon vouchers!</string>
+    <string name="registrationDescription">To participate in the raffle for three Amazon vouchers of 100.- USD each and to get early access to the data, just send us your e-mail using the button below. You will be able to register after the app will have collected data for at least 40% of the conference hours. <b>IMPORTANT</b>: Your e-mail address will not be linked to your data to guarantee your anonymity!</string>
+    <string name="registrationYesUploadNo">To participate in the raffle for three Amazon vouchers of 100.- USD each and to get early access to the data, just send us your e-mail using the button below. You will be able to register after the app will have collected data for at least 40% of the conference hours. <b>IMPORTANT</b>: Your e-mail address will not be linked to your data to guarantee your anonymity! Thank you for submitting your registration for receiving the data set. Your registration will be uploaded to the remote server as soon as possible.</string>
+    <string name="registrationYesUploadYes">To participate in the raffle for three Amazon vouchers of 100.- USD each and to get early access to the data, just send us your e-mail using the button below. You will be able to register after the app will have collected data for at least 40% of the conference hours. <b>IMPORTANT</b>: Your e-mail address will not be linked to your data to guarantee your anonymity! Thank you for submitting your registration for receiving the data set. Your registration has been uploaded to the remote server.</string>
+    <string name="registrationUnlockedText">To participate in the raffle for three Amazon vouchers of 100.- USD each and to get early access to the data, just send us your e-mail using the button below. You will be able to register after the app will have collected data for at least 40% of the conference hours. <b>IMPORTANT</b>: Your e-mail address will not be linked to your data to guarantee your anonymity!</string>
+    <string name="registrationAchievementUnlocked">Congratulation! You have unlocked the registration for the data set!</string>
+    
+    <string name="progressStatusText">Your data collection progress:</string>
+    <string name="currentProgressInitValue">0 %</string>
+    
+    <string name="notification_checkRegistration">Check registration for data set.</string>
+    <string name="notification_allUploaded">All data uploaded. Unistall app.</string>
+    
+    <string name="name">Name</string>
+    <string name="email">Email*</string>
+    <string name="affiliation">Affiliation</string>
+    <string name="smallprint">*Required</string>
+    <string name="uid">Unique device ID</string>
+    <string name="wifimac">Wi-Fi MAC</string>
+    <string name="bluetoothID">Bluetooth MAC</string>
+    <string name="age">Age</string>
+    <string name="role">Role</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="academiaindustry">Academia / industry</string>
+    <string name="academia">Academia</string>
+    <string name="industry">Industry</string>
+    <string name="save">Submit</string>
+    <string name="update">Save</string>
+    <string name="reset">Clear changes</string>
+    <string name="registerForData">Register</string>
+    <string name="noUIDmessage">No UID</string>
+    <string name="contact">Contact UbiComp 2013 DCC team</string>
+    
+    <string name="uploadQuestionnaireInterval">3600000</string>
+    <string name="uploadRegistrationInterval">3600000</string>
+    
+    
+    <string name="ok">OK</string>
+    <string name="dialogmessage">Please complete the form</string>
+    <string name="thanksDialogTitle">Welcome to the UbiComp 2013 DCC!</string>
+    <string name="thanksDialog">You are now collecting data for the UbiComp 2013 Data Collection Campaign (DCC). Thank you for your participation!</string>
+    <string name="questionnaireIncompleteTitle">Questionnaire incomplete</string>
+     <string name="dialogmessageemail">Please provide a valid email address</string>
+    
+    <string-array name="userRoles">
+        <item >Student / Ph.D. student</item>
+        <item >Postdoc / Senior researcher</item>
+        <item >Faculty member</item>
+        <item >Other</item>
+    </string-array>
+    
+    <!-- Buttons and Titles -->
+    <string name="app_name">UbiComp 2013 DCC</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_cluster">See Stays</string>
+    <string name="action_week">See Table</string>
+    <string name="action_map">Set Places</string>
+    <string name="action_diary">Set Diary</string>
+    <string name="action_save">Save Data</string>
+    <string name="action_delete">Delete Data</string>
+    <string name="action_dash">Dashboard</string>
+    <string name="action_algorithms">Algorithms</string>
+    <string name="action_places">Places of Interest</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_notnow">Not now</string>
+    <string name="button_okay">Okay</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_new">New</string>
+    <string name="button_mobile">On the way</string>
+    <string name="button_accept">Accept</string>
+    <string name="button_save">Save</string>
+    <string name="image_ubicomp_title">Logo of the Ubicomp-Conference</string>
+    <string name="welcomeMessageTitle">Welcome to the UbiComp 2013 Data Collection Campaign (DCC)</string>
+    <string name="welcomeMessageText"><br/>
+        <b>What is the UbiComp 2013 DCC application?</b>\n
+        This application allows you to participate in the UbiComp 2013 Data Collection Campaign – UbiComp 2013 DCC for short. The goal of the UbiComp 2013 DCC is to gather mobility traces of individuals in indoor environments.\n\n 
+
+		<b>Which data is collected?</b>\n
+		The app scans regularly for visible Wi-Fi access points and Bluetooth devices and logs their identifiers (along with a timestamp). The data is stored on the phone first and offloaded to a remote server whenever a Wi-Fi connection is available.\n\n 
+		
+		<b>When is the data collected?</b>\n
+		The app will run during the whole UbiComp 2013 conference. However, it will actually only record its data during the official “conference hours” – from the start of the first session until the end of the last session of each day. The rest of the time the app just sleeps. You can of course manually suspend all tracking at any time, directly in the app.\n\n
+		
+		<b>What do you plan to do with the data?</b>\n 
+		We want to analyze individuals’ and groups’ “micro-mobility” behavior. Hopefully, enough attendees will install the app so that we can collect a valuable data set for the research community.\n\n
+		
+		<b>Is the data going to be publicly available?</b>\n 
+		Yes, that is definitely the plan. Also, those who will help us with the collection by installing the app will get “early access” to it – as soon as we have done the initial clean-up of the data. The only catch is that we ask you to leave the app running for at least 40\u0025 of the conference hours for this. An indicator within the app will show you how close you are to that goal. As an additional incentive we will raffle three Amazon gift vouchers in the amount of 100.- USD among these participants!\n\n 
+		
+		<b>How do you know where to send my voucher to?</b>\n 
+		Once you reach that 40% goal, you will be able to submit your e-mail address directly in the app. This will allow you to participate in the raffle and to be included in the “early access” list.\n\n
+		
+		<b>Who are the organizers of the UbiComp 2013 DCC?</b>\n	
+		The UbiComp 2013 DCC is a joint project of the \n 
+		<a href="http://www.wsn.tu-darmstadt.de">Wireless Sensor Networks Lab (WSN Lab)</a> and \n
+		<a href="http://www.kom.tu-darmstadt.de">Multimedia Communication Lab (KOM)</a> of\n
+		TU Darmstadt, Germany and the \n\n
+		
+		<a href="http://www.vs.inf.ethz.ch">Distributed Systems Group (DS Group)</a> of \n
+		ETH Zurich, Switzerland. \n\n
+		
+		The team is composed of \n
+		<a href="http://www.wsn.tu-darmstadt.de/en/people/paul-baumann">Paul Baumann</a>, Johannes Klaus, and <br/>
+		<a href="http://www.wsn.tu-darmstadt.de/en/people/silvia-santini">Silvia Santini</a> (WSN Lab), \n
+		<a href="http://www.kom.tu-darmstadt.de/people/bjoern-richerzhagen">Bjoern Richerzhagen</a> (KOM), and \n
+		<a href="http://people.inf.ethz.ch/wilhelmk">Wilhelm Kleiminger</a> (DS Group).\n\n 
+		
+		Should you have any questions, please contact us: <a href="mailto:ubidcc@wsn.tu-darmstadt.de">ubidcc@wsn.tu-darmstadt.de</a>\n 
+		More information: <a href="http://www.wsn.tu-darmstadt.de/ubidcc">www.wsn.tu-darmstadt.de/ubidcc</a>
+		<!-- \n\nUbiComp 2013 DCC privacy policy:<br/> --> 
+		</string>
+    <string name="main_sensor_information">Graphical visualisations of gathered data</string>
+    <string name="main_entry_information">Make user entries for evaluation</string>
+    <string name="main_data_information">Manipulate data for privacy purposes</string>
+    <string name="main_status_information">Actual information</string>
+    <string name="main_online_information_off">Set username and password in settings to manage online your already uploaded data.</string>
+    <string name="main_online_information_on">Visit website to manage your already uploaded data.</string>
+    <string name="default_pipeline">        {
+  "@type": "edu.mit.media.funf.pipeline.BasicPipeline",
+  "name": "default",
+  "version": 1,
+  "archive": {
+    "@schedule": {
+      "interval": 360
+    }
+    
+  },
+  "upload": {
+       "url": \"http://130.83.198.188/ubicompdcc/upload_file.php\",
+       "wifiOnly": true,
+       "@schedule": {"interval": 360}
+  },
+  "data": [
+    "de.tud.wsn.locator.funf.HelperProbe",
+    {
+      "@type": "edu.mit.media.funf.probe.builtin.WifiProbe",
+      "@schedule": {
+        "interval": 20,
+        "strict": true
+      }
+    },
+    {
+      "@type": "edu.mit.media.funf.probe.builtin.BluetoothProbe",
+      "@schedule": {
+        "interval": 20,
+        "strict": true
+      }
+    }
+         ]
+        }</string>
+
+    <string name="urlUpload">http://130.83.198.188/ubicompdcc/upload_file_user.php</string>
+    <string name="urlAddUser">http://130.83.198.188/ubicompdcc/sql_addQuestionnaire.php</string>
+    <string name="urlRegisterForDataset">http://130.83.198.188/ubicompdcc/sql_registerForDataset.php</string>
+
+    <!-- preferences -->
+    <string name="preference_activity_title">Preferences</string>
+    <string name="settings_data">Data Gathering Settings</string>
+    <string name="settings_data_key">SettingsKey</string>
+    <string name="data_collection">Sensor Scans</string>
+    <string name="data_collection_key">SensorCollectionKey</string>
+    <string name="settings_login">Online login settings</string>
+    <string name="settings_login_key">SettingsLoginKey</string>
+    <string name="login_name">User name</string>
+    <string name="login_name_key">UserNameKey</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_key">PasswordKey</string>
+    <string name="settings_version">Version Information</string>
+    <string name="settings_version_key">VersionKey</string>
+    <string name="settings_version_number">VersionNumber</string>
+    <string name="settings_version_number_title">Number</string>
+    <string name="settings_inital_survey_completed">InitialSurveyCompletedKey</string>
+    <string name="settings_inital_survey_uploaded">InitialSurveyUploadedKey</string>
+    <string name="settings_registration_for_data_completed">RegistrationForDataCompletedKey</string>
+    <string name="settings_registration_for_data_uploaded">RegistrationForDataUploadedKey</string>
+    <string name="settings_registration_unlocked">RegistrationUnlockedKey</string>
+    <string name="settings_registration_number_of_scans">RegistrationNumberOfScansKey</string>
+    <string name="settings_registration_required_number_of_scans">2200</string>
+    <string name="settings_first_start_key">first_start_key</string>
+
+    <!-- Date delete -->
+    <string name="diary_edit_location">Enter location name</string>
+    <string name="diary_date_from">Date</string>
+    <string name="diary_date_to">Date</string>
+    <string name="diary_time_from">Time</string>
+    <string name="diary_time_to">Time</string>
+    <string name="diary_from">From</string>
+    <string name="diary_to">To</string>
+    <string name="diary_date">Date</string>
+
+    <!-- Data delete -->
+    <string name="datadelete_warning">The data is finally deleted from database for privacy purposes</string>
+
+    <!-- Feedback -->
+    <string name="button_contact">Contact</string>
+    <string name="title_send_feedback">Contact organisators</string>
+    <string name="mail_feedback_email">ubidcc@wsn.tu-darmstadt.de</string>
+    <string name="mail_feedback_subject">UbiComp 2013 DCC</string>
+    <string name="mail_feedback_message">Dear Paul,\n\nThis is my request.\nBest,\nYour name</string>
+
+    <!-- Changelog -->
+    <string name="changelog_full_title">Change Log</string>
+    <string name="changelog_title">What\'s New</string>
+    <string name="changelog_ok_button">OK</string>
+    <string name="changelog_show_full">more&#8230;</string>
+
+    <!-- This is necessary as a work-around to ensure the custom XML attributes for the graph layout can be used in the project -->
+    <string name="NS">http://schemas.android.com/apk/res/de.tud.wsn.locator</string>
+
+</resources>

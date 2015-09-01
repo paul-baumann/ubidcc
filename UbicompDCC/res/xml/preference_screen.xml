@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="@string/settings_data_key"
+        android:title="@string/settings_data" >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/settings_registration_unlocked"
+            android:title="@string/registrationStatusText" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

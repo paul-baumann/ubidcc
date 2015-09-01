@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ffff0000</color>
+    <color name="blueUbicomp">#4E72B8</color>
+    <color name="blueUbicompDark">#212847</color>
+
+</resources>
